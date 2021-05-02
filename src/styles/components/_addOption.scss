@@ -1,0 +1,31 @@
+.add-option-error{
+    color:$error;
+    font-style: italic;
+    margin: $m-size 0 0 0;
+    padding: 0 $m-size;
+}
+.add-otpion{
+    display: flex;
+    padding: 0 $m-size;
+    flex-direction: row;
+    margin: $m-size 0 0 0;
+}
+.add-option-input{
+    background-color: $dark-body-color;
+    flex-grow: 1;
+    font-size: 16px;
+    border: none;
+    border-bottom: .3rem solid darken($blue-color, 10%);
+    color:$off-white-second;
+    margin-right:$xl-size;
+}
+@media (max-width: 767px){
+    .add-otpion{
+        flex-direction: column;
+    }
+    .add-option-input{
+        flex-grow: 1;
+        margin: 0 0 $s-size 0;
+        padding:$s-size $s-size;
+    }
+}
